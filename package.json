@@ -1,9 +1,12 @@
 {
+  "homepage": "https://samharrison1999.github.io/e-portfolio",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -26,6 +29,7 @@
     "@types/react-dom": "18.0.6",
     "eslint": "8.19.0",
     "eslint-config-next": "12.2.2",
+    "gh-pages": "^6.1.1",
     "typescript": "4.7.4"
   }
 }
