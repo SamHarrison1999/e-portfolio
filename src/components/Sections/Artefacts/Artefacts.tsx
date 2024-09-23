@@ -1,9 +1,15 @@
 import * as React from 'react';
-import {Box, Button, Container, Grid, makeStyles, Tab, Tabs, tabsClasses, Tooltip, Typography} from '@mui/material';
+import {Accordion, AccordionActions, AccordionDetails, AccordionSummary, Box, Button, Container, Grid, makeStyles, Tab, Tabs, tabsClasses, Tooltip, Typography} from '@mui/material';
 import gsap from 'gsap';
 import {useRef, useEffect} from 'react';
 import ScrollToPlugin from "gsap/dist/ScrollToPlugin";
 import HeroSectionAnimation from '../../../gsap/HeroSectionAnimation';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
+
 
 export const btnStyles = {
     padding: '.77em 1.5em',
@@ -78,7 +84,6 @@ const Artefacts = () => {
                              textColor="secondary"
                              indicatorColor="secondary"
                              aria-label="basic tabs example"
-                             centered={true}
                              variant="scrollable"
                              scrollButtons="auto"
                              allowScrollButtonsMobile={true}
@@ -102,22 +107,414 @@ const Artefacts = () => {
                           <Tab label="Unit Twelve" {...a11yProps(11)} sx={{ minWidth: "fit-content", flex: 1 }} />
                         </Tabs>
                         <CustomTabPanel value={value} index={0}>
-                            Unit One Artefacts Go Here
+                            <Accordion sx={{ minWidth: "fit-content", flex: 1 }}>
+                                <AccordionSummary
+                                  expandIcon={<ExpandMoreIcon />}
+                                  aria-controls="panel1-content"
+                                  id="panel1-header"
+                                  sx={ {
+                                      color: '#ffffff'
+                                  }}
+                                >
+                                  Team Contract
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                    <div>
+                                        <iframe src="/assets/Team%20Contract.pdf" width="100%" height="500px"/>
+                                    </div>
+                                </AccordionDetails>
+                            </Accordion>
+                            <Accordion>
+                                <AccordionSummary
+                                    expandIcon={<ExpandMoreIcon/>}
+                                    aria-controls="panel2-content"
+                                  id="panel2-header"
+                                  sx={ {
+                                      color: '#ffffff'
+                                  }}
+                                >
+                                  Collaborative Discussion 1: Project Failures Study Initial post
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                    <div>
+                                        <iframe src="/assets/Collaborative%20Discussion%201%20-%20Initial%20post.pdf" width="100%" height="500px"/>
+                                    </div>
+                                </AccordionDetails>
+                            </Accordion>
+                            <Accordion>
+                                <AccordionSummary
+                                    expandIcon={<ExpandMoreIcon/>}
+                                    aria-controls="panel2-content"
+                                  id="panel2-header"
+                                  sx={ {
+                                      color: '#ffffff'
+                                  }}
+                                >
+                                  Meeting Minuets
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                    <div>
+                                        <iframe src="/assets/MoM_GroupEstablish_20240801.pdf"
+                                                width="100%" height="500px"/>
+                                    </div>
+                                    <div>
+                                        <iframe src="/assets/MoM_TeamContract_20240802.pdf"
+                                                width="100%" height="500px"/>
+                                    </div>
+                                </AccordionDetails>
+                            </Accordion>
                         </CustomTabPanel>
                         <CustomTabPanel value={value} index={1}>
-                            Unit Two Artefacts Go Here
+                            <Accordion sx={{ minWidth: "fit-content", flex: 1 }}>
+                                <AccordionSummary
+                                  expandIcon={<ExpandMoreIcon />}
+                                  aria-controls="panel1-content"
+                                  id="panel1-header"
+                                  sx={ {
+                                      color: '#ffffff'
+                                  }}
+                                >
+                                  Formative Activities
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                    <div>
+                                        <iframe src="/assets/Requirements%20Gathering%20Unit%202%20Formative%20Activity.pdf" width="100%" height="500px"/>
+                                    </div>
+                                </AccordionDetails>
+                            </Accordion>
+                            <Accordion sx={{ minWidth: "fit-content", flex: 1 }}>
+                                <AccordionSummary
+                                  expandIcon={<ExpandMoreIcon />}
+                                  aria-controls="panel1-content"
+                                  id="panel1-header"
+                                  sx={ {
+                                      color: '#ffffff'
+                                  }}
+                                >
+                                  Collaborative Discussion Peer Response 1
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                    <div>
+                                        <iframe src="/assets/Collaborative%20Discussion%201%20-%20Peer%20Response%201.pdf" width="100%" height="500px"/>
+                                    </div>
+                                </AccordionDetails>
+                            </Accordion>
+                            <Accordion sx={{ minWidth: "fit-content", flex: 1 }}>
+                                <AccordionSummary
+                                  expandIcon={<ExpandMoreIcon />}
+                                  aria-controls="panel1-content"
+                                  id="panel1-header"
+                                  sx={ {
+                                      color: '#ffffff'
+                                  }}
+                                >
+                                  Collaborative Discussion Peer Response 2
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                    <div>
+                                        <iframe src="/assets/Collaborative%20Discussion%201%20-%20Peer%20Response%202.pdf" width="100%" height="500px"/>
+                                    </div>
+                                </AccordionDetails>
+                            </Accordion>
+                            <Accordion sx={{ minWidth: "fit-content", flex: 1 }}>
+                                <AccordionSummary
+                                  expandIcon={<ExpandMoreIcon />}
+                                  aria-controls="panel1-content"
+                                  id="panel1-header"
+                                  sx={ {
+                                      color: '#ffffff'
+                                  }}
+                                >
+                                  Meeting Minuets
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                    <div>
+                                        <iframe src="/assets/MoM_PreparatoryTasks_20240808.pdf" width="100%" height="500px"/>
+                                    </div>
+                                </AccordionDetails>
+                            </Accordion>
                         </CustomTabPanel>
                         <CustomTabPanel value={value} index={2}>
-                            Unit Three Artefacts Go Here
+                            <Accordion sx={{ minWidth: "fit-content", flex: 1 }}>
+                                <AccordionSummary
+                                  expandIcon={<ExpandMoreIcon />}
+                                  aria-controls="panel1-content"
+                                  id="panel1-header"
+                                  sx={ {
+                                      color: '#ffffff'
+                                  }}
+                                >
+                                  Formative Activities
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                    <div>
+                                        <Typography
+                                        sx={ {
+                                            color: '#ffffff'
+                                        }}>The formative activity for this week was to respond to at least two of your peers&apos; contributions by commenting constructively on their proposed diagram changes. However, for the first collaborative discussion you were not required to make any diagrams. This lead me to believe the learning platform was out of date. Additionally, as I had already responded to two peers in Unit 2 I wasn&apos;t sure if this had been duplicated by mistake and not update. When I reached out to my team members regarding this they were also very confused.</Typography>
+                                    </div>
+                                </AccordionDetails>
+                            </Accordion>
+                            <Accordion sx={{ minWidth: "fit-content", flex: 1 }}>
+                                <AccordionSummary
+                                  expandIcon={<ExpandMoreIcon />}
+                                  aria-controls="panel1-content"
+                                  id="panel1-header"
+                                  sx={ {
+                                      color: '#ffffff'
+                                  }}
+                                >
+                                  E-Portfolio Activity: Data Structures Reflection
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                    <div>
+                                        <iframe src="/assets/Data%20Structures%20Reflection%20Activity.pdf" width="100%" height="500px"/>
+                                    </div>
+                                </AccordionDetails>
+                            </Accordion>
+                            <Accordion sx={{ minWidth: "fit-content", flex: 1 }}>
+                                <AccordionSummary
+                                  expandIcon={<ExpandMoreIcon />}
+                                  aria-controls="panel1-content"
+                                  id="panel1-header"
+                                  sx={ {
+                                      color: '#ffffff'
+                                  }}
+                                >
+                                  Meeting Minuets
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                    <div>
+                                        <iframe src="/assets/MoM_ProjectReportDraft_20240815.pdf" width="100%" height="500px"/>
+                                    </div>
+                                </AccordionDetails>
+                            </Accordion>
                         </CustomTabPanel>
                         <CustomTabPanel value={value} index={3}>
-                            Unit Four Artefacts Go Here
+                            <Accordion sx={{ minWidth: "fit-content", flex: 1 }}>
+                                <AccordionSummary
+                                  expandIcon={<ExpandMoreIcon />}
+                                  aria-controls="panel1-content"
+                                  id="panel1-header"
+                                  sx={ {
+                                      color: '#ffffff'
+                                  }}
+                                >
+                                  Collaborative Discussion 1 Summary Post
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                    <div>
+                                        <iframe src="/assets/Collaborative%20Discussion%201%20-%20Summary%20Post.pdf" width="100%" height="500px"/>
+                                    </div>
+                                </AccordionDetails>
+                            </Accordion>
+                            <Accordion sx={{ minWidth: "fit-content", flex: 1 }}>
+                                <AccordionSummary
+                                  expandIcon={<ExpandMoreIcon />}
+                                  aria-controls="panel1-content"
+                                  id="panel1-header"
+                                  sx={ {
+                                      color: '#ffffff'
+                                  }}
+                                >
+                                  Wiki Entry: Risks and risk mitigation
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                    <div>
+                                        <iframe src="/assets/Wiki%20Entry%20-%20Risks%20and%20risk%20mitigation.pdf" width="100%" height="500px"/>
+                                    </div>
+                                </AccordionDetails>
+                            </Accordion>
+                            <Accordion sx={{ minWidth: "fit-content", flex: 1 }}>
+                                <AccordionSummary
+                                  expandIcon={<ExpandMoreIcon />}
+                                  aria-controls="panel1-content"
+                                  id="panel1-header"
+                                  sx={ {
+                                      color: '#ffffff'
+                                  }}
+                                >
+                                  Seminar Preparation Activities
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                    <div>
+                                        <iframe
+                                            src="/assets/Estimating%20Tools%20and%20Risk%20Assessment%20Exercise.pdf"
+                                            width="100%" height="500px"/>
+                                    </div>
+                                    <div>
+                                        <Typography
+                                            sx={{
+                                                color: '#ffffff'
+                                            }}>The second seminar preparation activity for this week was to create a
+                                            Wiki Entry for Risks and risk mitigation. However this was the formative
+                                            activity for this unit. This lead me to believe the learning platform was
+                                            out of date.</Typography>
+                                    </div>
+                                </AccordionDetails>
+                            </Accordion>
+                            <Accordion sx={{ minWidth: "fit-content", flex: 1 }}>
+                                <AccordionSummary
+                                  expandIcon={<ExpandMoreIcon />}
+                                  aria-controls="panel1-content"
+                                  id="panel1-header"
+                                  sx={ {
+                                      color: '#ffffff'
+                                  }}
+                                >
+                                  Meeting Minuets
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                    <div>
+                                        <iframe src="/assets/MoM_ProjectReportReview_20240822.pdf" width="100%" height="500px"/>
+                                    </div>
+                                </AccordionDetails>
+                            </Accordion>
                         </CustomTabPanel>
                         <CustomTabPanel value={value} index={4}>
-                            Unit Five Artefacts Go Here
+                            <Accordion sx={{ minWidth: "fit-content", flex: 1 }}>
+                                <AccordionSummary
+                                  expandIcon={<ExpandMoreIcon />}
+                                  aria-controls="panel1-content"
+                                  id="panel1-header"
+                                  sx={ {
+                                      color: '#ffffff'
+                                  }}
+                                >
+                                  Collaborative Discussion 2: Factors Affecting User Experience Initial Post
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                    <div>
+                                        <iframe src="/assets/Collaborative%20Discussion%202%20-%20Initial%20post.pdf" width="100%" height="500px"/>
+                                    </div>
+                                </AccordionDetails>
+                            </Accordion>
+                            <Accordion sx={{ minWidth: "fit-content", flex: 1 }}>
+                                <AccordionSummary
+                                  expandIcon={<ExpandMoreIcon />}
+                                  aria-controls="panel1-content"
+                                  id="panel1-header"
+                                  sx={ {
+                                      color: '#ffffff'
+                                  }}
+                                >
+                                  Meeting Minuets
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                    <div>
+                                        <iframe src="/assets/MoM_WordCountLimit_20240827.pdf" width="100%" height="500px"/>
+                                        <iframe src="/assets/MoM_ProjectReportRefinements_20240901.pdf" width="100%" height="500px"/>
+                                    </div>
+                                </AccordionDetails>
+                            </Accordion>
                         </CustomTabPanel>
                         <CustomTabPanel value={value} index={5}>
-                            Unit Six Artefacts Go Here
+                            <Accordion sx={{ minWidth: "fit-content", flex: 1 }}>
+                                <AccordionSummary
+                                  expandIcon={<ExpandMoreIcon />}
+                                  aria-controls="panel1-content"
+                                  id="panel1-header"
+                                  sx={ {
+                                      color: '#ffffff'
+                                  }}
+                                >
+                                  Seminar Preparation Activity
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                    <div>
+                                        <Typography
+                                        sx={ {
+                                            color: '#ffffff'
+                                        }}>The preparation activity for this week was to review responses to the Collaborative Learning Discussion from Unit 5.</Typography>
+                                    </div>
+                                </AccordionDetails>
+                            </Accordion>
+                            <Accordion sx={{ minWidth: "fit-content", flex: 1 }}>
+                                <AccordionSummary
+                                  expandIcon={<ExpandMoreIcon />}
+                                  aria-controls="panel1-content"
+                                  id="panel1-header"
+                                  sx={ {
+                                      color: '#ffffff'
+                                  }}
+                                >
+                                  Jupyter Notebook Activity - pytest
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                    <div>
+                                        <iframe src="/assets/Jupyter%20Notebook%20Activity%20-%20pytest.pdf" width="100%" height="500px"/>
+                                    </div>
+                                </AccordionDetails>
+                            </Accordion>
+                            <Accordion sx={{ minWidth: "fit-content", flex: 1 }}>
+                                <AccordionSummary
+                                  expandIcon={<ExpandMoreIcon />}
+                                  aria-controls="panel1-content"
+                                  id="panel1-header"
+                                  sx={ {
+                                      color: '#ffffff'
+                                  }}
+                                >
+                                  Assignment 1 Project Report
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                    <div>
+                                        <iframe src="/assets/Development%20Team%20Project%20-%20Project%20Report.pdf" width="100%" height="500px"/>
+                                    </div>
+                                </AccordionDetails>
+                            </Accordion>
+                            <Accordion sx={{ minWidth: "fit-content", flex: 1 }}>
+                                <AccordionSummary
+                                  expandIcon={<ExpandMoreIcon />}
+                                  aria-controls="panel1-content"
+                                  id="panel1-header"
+                                  sx={ {
+                                      color: '#ffffff'
+                                  }}
+                                >
+                                  Assignment 1 Peer Review
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                    <div>
+                                        <iframe src="/assets/Development%20Activity%20-%20Peer%20Review.pdf" width="100%" height="500px"/>
+                                    </div>
+                                </AccordionDetails>
+                            </Accordion>
+                            <Accordion sx={{ minWidth: "fit-content", flex: 1 }}>
+                                <AccordionSummary
+                                  expandIcon={<ExpandMoreIcon />}
+                                  aria-controls="panel1-content"
+                                  id="panel1-header"
+                                  sx={ {
+                                      color: '#ffffff'
+                                  }}
+                                >
+                                  Meeting Minuets
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                    <div>
+                                        <iframe src="/assets/MoM_ProjectReport2ndRefinements_20240905.pdf" width="100%" height="500px"/>
+                                        <iframe src="/assets/MoM_ProjectReportFinalReview_20240907.pdf" width="100%" height="500px"/>
+                                    </div>
+                                </AccordionDetails>
+                            </Accordion>
+                            <Accordion sx={{ minWidth: "fit-content", flex: 1 }}>
+                                <AccordionSummary
+                                  expandIcon={<ExpandMoreIcon />}
+                                  aria-controls="panel1-content"
+                                  id="panel1-header"
+                                  sx={ {
+                                      color: '#ffffff'
+                                  }}
+                                >
+                                  Assignment 1 Feedback
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                    <div>
+                                        <iframe src="/assets/Assignment%201%20Feedback.png" width="100%" height="500px"/>
+                                    </div>
+                                </AccordionDetails>
+                            </Accordion>
                         </CustomTabPanel>
                         <CustomTabPanel value={value} index={6}>
                             Unit Seven Artefacts Go Here
