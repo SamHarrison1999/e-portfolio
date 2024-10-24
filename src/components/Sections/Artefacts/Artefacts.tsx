@@ -138,6 +138,8 @@ const Artefacts = () => {
                                 <AccordionDetails>
                                     <div>
                                         <iframe src="/assets/Collaborative%20Discussion%201%20-%20Initial%20post.pdf" width="100%" height="500px"/>
+                                        <iframe src="/assets/Collaborative%20Discussion%201%20-%20Initial%20post%20response%201.png" width="100%" height="500px"/>
+                                        <iframe src="/assets/Collaborative%20Discussion%201%20-%20Initial%20post%20response%202.png" width="100%" height="500px"/>
                                     </div>
                                 </AccordionDetails>
                             </Accordion>
@@ -418,14 +420,28 @@ const Artefacts = () => {
                                       color: '#ffffff'
                                   }}
                                 >
-                                  Seminar Preparation Activity
+                                  Collaborative Discussion Peer Response 1
                                 </AccordionSummary>
                                 <AccordionDetails>
                                     <div>
-                                        <Typography
-                                        sx={ {
-                                            color: '#ffffff'
-                                        }}>The preparation activity for this week was to review responses to the Collaborative Learning Discussion from Unit 5.</Typography>
+                                        <iframe src="/assets/Collaborative%20Discussion%202%20-%20Peer%20Response%201.pdf" width="100%" height="500px"/>
+                                    </div>
+                                </AccordionDetails>
+                            </Accordion>
+                            <Accordion sx={{ minWidth: "fit-content", flex: 1 }}>
+                                <AccordionSummary
+                                  expandIcon={<ExpandMoreIcon />}
+                                  aria-controls="panel1-content"
+                                  id="panel1-header"
+                                  sx={ {
+                                      color: '#ffffff'
+                                  }}
+                                >
+                                  Collaborative Discussion Peer Response 2
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                    <div>
+                                        <iframe src="/assets/Collaborative%20Discussion%202%20-%20Peer%20Response%202.pdf" width="100%" height="500px"/>
                                     </div>
                                 </AccordionDetails>
                             </Accordion>
@@ -517,19 +533,205 @@ const Artefacts = () => {
                             </Accordion>
                         </CustomTabPanel>
                         <CustomTabPanel value={value} index={6}>
-                            Unit Seven Artefacts Go Here
+                            <Accordion sx={{ minWidth: "fit-content", flex: 1 }}>
+                                <AccordionSummary
+                                  expandIcon={<ExpandMoreIcon />}
+                                  aria-controls="panel1-content"
+                                  id="panel1-header"
+                                  sx={ {
+                                      color: '#ffffff'
+                                  }}
+                                >
+                                  Collaborative Discussion 2 Summary Post
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                    <div>
+                                        <iframe src="/assets/Collaborative%20Discussion%202%20-%20Summary%20Post.pdf" width="100%" height="500px"/>
+                                    </div>
+                                </AccordionDetails>
+                            </Accordion>
+                            <Accordion sx={{ minWidth: "fit-content", flex: 1 }}>
+                                <AccordionSummary
+                                  expandIcon={<ExpandMoreIcon />}
+                                  aria-controls="panel1-content"
+                                  id="panel1-header"
+                                  sx={ {
+                                      color: '#ffffff'
+                                  }}
+                                >
+                                  Seminar Preparation Activity
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                    <div>
+                                        <Typography
+                                            sx={{
+                                                color: '#ffffff'
+                                            }}>The seminar preparation activity for this week was to Read Dicheva & Hodge (2018).
+                                            Think about an online system which you use on a daily basis.
+                                            Consider how it might operate at the back-end using data structures. However this was an E-Portfolio
+                                            activity in unit 3. This is not the first time during this module that there have been duplicate
+                                            entries on the learning platform which is not up to the standard I would expect from postgraduate study.
+                                            As I have already done this I don&apos;t see the value in doing it again.
+                                        </Typography>
+                                    </div>
+                                </AccordionDetails>
+                            </Accordion>
+                            <Accordion sx={{ minWidth: "fit-content", flex: 1 }}>
+                                <AccordionSummary
+                                  expandIcon={<ExpandMoreIcon />}
+                                  aria-controls="panel1-content"
+                                  id="panel1-header"
+                                  sx={ {
+                                      color: '#ffffff'
+                                  }}
+                                >
+                                  E-Portfolio Activity
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                    <div>
+                                        <iframe src="/assets/Managing%20the%20emotional%20reactions%20of%20a%20customer.pdf" width="100%" height="500px"/>
+                                    </div>
+                                </AccordionDetails>
+                            </Accordion>
                         </CustomTabPanel>
                         <CustomTabPanel value={value} index={7}>
-                            Unit Eight Artefacts Go Here
+                            <Accordion sx={{ minWidth: "fit-content", flex: 1 }}>
+                                <AccordionSummary
+                                  expandIcon={<ExpandMoreIcon />}
+                                  aria-controls="panel1-content"
+                                  id="panel1-header"
+                                  sx={ {
+                                      color: '#ffffff'
+                                  }}
+                                >
+                                  Seminar Preparation Activity
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                    <div>
+                                        <iframe src="/assets/Data%20Structures%20-%20Seminar%20Preparation%20Activity.pdf" width="100%" height="500px"/>
+                                    </div>
+                                </AccordionDetails>
+                            </Accordion>
                         </CustomTabPanel>
                         <CustomTabPanel value={value} index={8}>
-                            Unit Nine Artefacts Go Here
+                            <Accordion sx={{ minWidth: "fit-content", flex: 1 }}>
+                                <AccordionSummary
+                                  expandIcon={<ExpandMoreIcon />}
+                                  aria-controls="panel1-content"
+                                  id="panel1-header"
+                                  sx={ {
+                                      color: '#ffffff'
+                                  }}
+                                >
+                                  e-Portfolio Activity: Improving Code Quality
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                    <div>
+                                        <Typography
+                                        sx={ {
+                                            color: '#ffffff'
+                                        }}>2048.py</Typography>
+                                        <iframe src="/assets/2048.pdf" width="100%" height="500px"/>
+                                        <Typography
+                                        sx={ {
+                                            color: '#ffffff'
+                                        }}>2048.py Pylint Results</Typography>
+                                        <iframe src="/assets/Pylint%20old%20code.png" width="100%" height="500px"/>
+                                        <Typography
+                                        sx={ {
+                                            color: '#ffffff'
+                                        }}>two_thousand_forty_eight.py</Typography>
+                                        <iframe src="/assets/2048%20-%20Improved%20Code.pdf" width="100%" height="500px"/>
+                                        <Typography
+                                        sx={ {
+                                            color: '#ffffff'
+                                        }}>two_thousand_forty_eight.py Pylint Results</Typography>
+                                        <iframe src="/assets/Pylint%20old%20code%20-%20improved.png" width="100%" height="500px"/>
+                                    </div>
+                                </AccordionDetails>
+                            </Accordion>
                         </CustomTabPanel>
                         <CustomTabPanel value={value} index={9}>
-                            Unit Ten Artefacts Go Here
+                            <Accordion sx={{ minWidth: "fit-content", flex: 1 }}>
+                                <AccordionSummary
+                                  expandIcon={<ExpandMoreIcon />}
+                                  aria-controls="panel1-content"
+                                  id="panel1-header"
+                                  sx={ {
+                                      color: '#ffffff'
+                                  }}
+                                >
+                                  Activity: Using Linters to Achieve Python Code Quality
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                    <div>
+                                        <Typography
+                                            sx={{
+                                                color: '#ffffff'
+                                            }}>lint.py</Typography>
+                                        <iframe src="/assets/lint.pdf" width="100%" height="500px"/>
+                                        <Typography
+                                            sx={{
+                                                color: '#ffffff'
+                                            }}>Pylint Result</Typography>
+                                        <iframe src="/assets/Pylint%20lint.py.png" width="100%" height="500px"/>
+                                        <Typography
+                                            sx={{
+                                                color: '#ffffff'
+                                            }}>Pyflakes Result</Typography>
+                                        <iframe src="/assets/Pyflakes%20lint.py.png" width="100%" height="500px"/>
+                                        <Typography
+                                            sx={{
+                                                color: '#ffffff'
+                                            }}>Pycodestyle Result</Typography>
+                                        <iframe src="/assets/Pycodestyle%20lint.py.png" width="100%" height="500px"/>
+                                        <Typography
+                                            sx={{
+                                                color: '#ffffff'
+                                            }}>Pydocstyle Result</Typography>
+                                        <iframe src="/assets/Pydocstyle%20lint.py.png" width="100%" height="500px"/>
+                                        <iframe src="/assets/Comparing%20the%20effectiveness%20of%20linters.pdf"
+                                                width="100%" height="500px"/>
+                                    </div>
+                                </AccordionDetails>
+                            </Accordion>
                         </CustomTabPanel>
                         <CustomTabPanel value={value} index={10}>
-                            Unit Eleven Artefacts Go Here
+                            <Accordion sx={{ minWidth: "fit-content", flex: 1 }}>
+                                <AccordionSummary
+                                  expandIcon={<ExpandMoreIcon />}
+                                  aria-controls="panel1-content"
+                                  id="panel1-header"
+                                  sx={ {
+                                      color: '#ffffff'
+                                  }}
+                                >
+                                  Assignment 2
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                    <div>
+                                        <iframe src="https://1drv.ms/v/c/e08399976f28f5bf/EXYsZecjl6hJqRAiS32zxzEB3pj8onCBolIRAH3m6kD9xg?e=9fLOFM" width="100%" height="500px"/>
+                                        <iframe src="/assets/Transcript%20for%20the%20Synputer%20Presentation.pdf" width="100%" height="500px"/>
+                                    </div>
+                                </AccordionDetails>
+                            </Accordion>
+                            <Accordion sx={{ minWidth: "fit-content", flex: 1 }}>
+                                <AccordionSummary
+                                  expandIcon={<ExpandMoreIcon />}
+                                  aria-controls="panel1-content"
+                                  id="panel1-header"
+                                  sx={ {
+                                      color: '#ffffff'
+                                  }}
+                                >
+                                  Assignment 2 Feedback
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                    <div>
+                                        <iframe src="/assets/Assignment%202%20Feedback.png" width="100%" height="500px"/>
+                                    </div>
+                                </AccordionDetails>
+                            </Accordion>
                         </CustomTabPanel>
                         <CustomTabPanel value={value} index={11}>
                             Unit Twelve Artefacts Go Here

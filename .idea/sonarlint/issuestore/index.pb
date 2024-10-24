@@ -76,3 +76,13 @@ G.idea/sonarlint/issuestore/a/9/a91268b5541e910da8b9d07874c651b809895346,2\9\29
 Q.idea/sonarlint/securityhotspotstore/8/8/88a9255124c95bdc913197c120a8d560edc59c8e,9\0\909762385fc6eb20f922a91c6865741308b57f2c
 w
 G.idea/sonarlint/issuestore/f/a/fa288d1472d29beccb489a676f68739ad365fc47,c\d\cdb55fb7b9550cf1c93c03e68dfe3882647e90dc
+=
+tsconfig.json,6\1\61ebb9fd6e8cf9082658121d5d81e297791dacd0
+T
+$.idea/codeStyles/codeStyleConfig.xml,d\d\dd7b3350c29c49497756c7f32c69a3bed18b1cba
+L
+.idea/codeStyles/Project.xml,6\e\6ecd6000a7b6f4a2884412ff19f74193ed089648
+w
+G.idea/sonarlint/issuestore/6/1/61ebb9fd6e8cf9082658121d5d81e297791dacd0,b\2\b22f7e8090489b33880b9b9308cf7b19a9533f58
+Å
+Q.idea/sonarlint/securityhotspotstore/6/1/61ebb9fd6e8cf9082658121d5d81e297791dacd0,6\4\64c8749f273f2498813d8e367242b13e73cbf7c3
