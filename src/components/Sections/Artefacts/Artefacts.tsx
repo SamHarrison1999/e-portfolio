@@ -695,6 +695,23 @@ const Artefacts = () => {
                                     </div>
                                 </AccordionDetails>
                             </Accordion>
+                            <Accordion sx={{ minWidth: "fit-content", flex: 1 }}>
+                                <AccordionSummary
+                                  expandIcon={<ExpandMoreIcon />}
+                                  aria-controls="panel1-content"
+                                  id="panel1-header"
+                                  sx={ {
+                                      color: '#ffffff'
+                                  }}
+                                >
+                                  E-Portfolio Activity: Reflection on Software Quality
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                    <div>
+                                        <iframe src="/assets/Reflection%20on%20Software%20Quality.pdf" width="100%" height="500px"/>
+                                    </div>
+                                </AccordionDetails>
+                            </Accordion>
                         </CustomTabPanel>
                         <CustomTabPanel value={value} index={10}>
                             <Accordion sx={{ minWidth: "fit-content", flex: 1 }}>
@@ -734,7 +751,25 @@ const Artefacts = () => {
                             </Accordion>
                         </CustomTabPanel>
                         <CustomTabPanel value={value} index={11}>
-                            Unit Twelve Artefacts Go Here
+                            <Accordion sx={{ minWidth: "fit-content", flex: 1 }}>
+                                <AccordionSummary
+                                  expandIcon={<ExpandMoreIcon />}
+                                  aria-controls="panel1-content"
+                                  id="panel1-header"
+                                  sx={ {
+                                      color: '#ffffff'
+                                  }}
+                                >
+                                  Future Trends in Software Engineering Project Management Presentation
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                    <div>
+                                        <iframe
+                                            src="https://1drv.ms/v/c/e08399976f28f5bf/EQoJmMoEgvxDkCMb5_xR_CEBZLHhDf9MYIQBwyvtun2X2w"
+                                            width="100%" height="500px"/>
+                                    </div>
+                                </AccordionDetails>
+                            </Accordion>
                         </CustomTabPanel>
                     </Box>
                 </Grid>

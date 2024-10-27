@@ -23,6 +23,10 @@ export const Links = [
         text: 'Reflections',
         Icon: ArticleIcon,
         url: '/reflections'
+    }, {
+        text: 'Skills Matrix and Action Plan',
+        Icon: ArticleIcon,
+        url: '/skills-matrix'
     }
 ]
 
